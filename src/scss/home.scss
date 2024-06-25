@@ -1,0 +1,183 @@
+//====================================================================================================
+.partners {
+    @include adaptiveValue("padding-top", 75, 30);
+    @include adaptiveValue("padding-bottom", 75, 30);
+    background-color: #22231d;
+    // .partners__container
+    &__container {
+    }
+    // .partners__sup-title
+    &__sup-title {
+        color: #efebd6;
+        display: flex;
+        font-size: toRem(18);
+        line-height: 155.555556%;
+        column-gap: toRem(25);
+        align-items: center;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 30);
+        }
+        &::before {
+            @include adaptiveValue("font-size", 45, 34);
+        }
+    }
+    // .partners__title
+    &__title {
+        color: #efebd6;
+        text-align: center;
+        font-size: toRem(24);
+        line-height: 140%;
+        max-width: toRem(612);
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin-bottom: toRem(32);
+        }
+    }
+    // .partners__slider-body
+    &__slider-body {
+        position: relative;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 20);
+        }
+    }
+
+    // .partners__slider
+    &__slider {
+        max-width: 74%;
+        @media (max-width: $mobile) {
+            max-width: 100%;
+        }
+    }
+    // .partners__slide
+    &__tab-btn-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: toRem(144);
+            height: 80px;
+        }
+    }
+
+    // .partners__tab-content
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        gap: toRem(20);
+        @media (max-width: toEm(1023)) {
+            flex-direction: column;
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    @media (max-width: $mobile) {
+        top: -20px;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+._icon-arrow_right,
+._icon-arrow_left {
+    font-size: toRem(56);
+    @media (max-width: toEm(1024)) {
+        font-size: toRem(30);
+    }
+}
+
+.company-info {
+    width: 49%;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
+    // .company-info__title
+    &__title {
+        color: #92772d;
+        font-size: toRem(24);
+        line-height: 100%; /* 24px */
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 24, 15);
+        }
+    }
+    // .company-info__text
+    &__text {
+        font-size: toRem(16);
+        line-height: 150%; /* 24px */
+    }
+}
+.company-team {
+    width: 49%;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
+    // .company-team__slide-image
+    &__slide-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: toRem(285);
+        height: toRem(285);
+        &:not(:last-child) {
+            margin-bottom: toRem(24);
+        }
+        img {
+            max-width: toRem(285);
+            height: toRem(285);
+            object-fit: cover;
+        }
+    }
+    // .company-team__slide-title
+    &__slide-title {
+        color: #efebd6;
+        font-size: toRem(24);
+        line-height: 100%; /* 24px */
+        &:not(:last-child) {
+            margin-bottom: toRem(12);
+        }
+    }
+    // .company-team__slide-position
+    &__slide-position {
+        color: rgba(239, 235, 214, 0.52);
+        font-size: toRem(18);
+        line-height: 100%; /* 24px */
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__swiper-button-wrapper {
+    }
+}
+
+.tab-content {
+    display: none;
+    color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-btn {
+    cursor: pointer;
+}
+
+//====================================================================================================

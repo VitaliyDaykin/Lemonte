@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/_head.htm',{ "title":"Home Page" })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.htm',{})
+            <main class="page">
+                <section class="partners">
+                    <div class="partners__container">
+                        <div class="partners__sup-title _icon-lemonte_sign_brown">05 / Партнери</div>
+                        <h3 class="partners__title">Раді представити вам наших партнерів, що щодня допомогають нам створювати Lemonte</h3>
+                        <div class="partners__slider-body">
+                            <div class="tabs partners__slider swiper">
+                                <div class="partners__wrapper swiper-wrapper">
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab1">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo022.jpg" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab2">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab3">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab4">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab5">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab6">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <div class="tab-btn partners__tab-btn" data-target="tab7">
+                                            <div class="partners__tab-btn-image">
+                                                <img src="@img/logo.png" alt="Image" />
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev _icon-arrow_left"></div>
+                            <div class="swiper-button-next _icon-arrow_right"></div>
+                        </div>
+                        <div class="tab-content active" id="tab1">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company 111</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab2">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company 222</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab3">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company 333</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/logo022.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab4">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab5">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab6">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab7">
+                            <div class="partners__info info-partners">
+                                <div class="info-partners__company-info company-info">
+                                    <h3 class="company-info__title">Name of the Company</h3>
+                                    <div class="company-info__text">
+                                        <p>
+                                            Радий представити нашого партнера по бізнесу в будівництві готелів, Івана Петрова. Іван має понад 20 років досвіду у галузі готельного бізнесу та будівництва. Завдяки його експертизі та стратегічному баченню ми реалізували кілька успішних проектів, що
+                                            стали справжніми перлинами в готельному секторі. Його увага до деталей та прагнення до досконалості гарантують, що кожен новий готель відповідає найвищим стандартам якості та комфорту. Співпраця з Іваном дозволяє нам впроваджувати інноваційні рішення та
+                                            забезпечувати неперевершений сервіс для наших гостей.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-partners__company-team company-team">
+                                    <div class="company-team__header">
+                                        <h3 class="company-info__title">Наша команда</h3>
+                                        <div class="company-info__swiper-button-wrapper">
+                                            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                                            <button type="button" class="company-team__swiper-button-prev _icon-arrow_left"></button>
+                                            <button type="button" class="company-team__swiper-button-next _icon-arrow_right"></button>
+                                        </div>
+                                    </div>
+                                    <!-- Оболонка слайдера -->
+                                    <div class="company-team__slider swiper">
+                                        <!-- Частина слайдера, що рухається -->
+                                        <div class="company-team__wrapper swiper-wrapper">
+                                            <!-- Слайд -->
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/post-image.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                            <div class="company-team__slide swiper-slide">
+                                                <div class="company-team__slide-image">
+                                                    <img src="@img/team01.jpg" alt="Image" />
+                                                </div>
+                                                <h4 class="company-team__slide-title">Іван</h4>
+                                                <div class="company-team__slide-position">Real Estate Agent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_js.htm',{})
+    </body>
+</html>

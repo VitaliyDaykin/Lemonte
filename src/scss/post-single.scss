@@ -1,0 +1,211 @@
+.post-single {
+    @include adaptiveValue("padding-bottom", 88, 30);
+    // .post-single__container
+    &__container {
+        display: grid;
+        gap: toRem(32);
+    }
+    // .post-single__featured-image
+    &__featured-image {
+        height: toRem(650);
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    // .post-single__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            row-gap: toRem(30);
+        }
+    }
+}
+.body-post {
+    // .body-post__content
+    &__content {
+        width: 66%;
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+    }
+    // .body-post__sidebar
+    &__sidebar {
+        width: 32%;
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+    }
+}
+.content-post {
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(16);
+    // .content-post__meta
+    &__meta {
+        font-weight: 500;
+        line-height: 1.5;
+        color: #535353;
+    }
+    // .content-post__title
+    &__title {
+        @include adaptiveValue("font-size", 48, 32);
+        line-height: normal;
+        font-weight: 700;
+    }
+    // .content-post__filling
+    &__filling {
+        font-family: Inter;
+        line-height: 1.5;
+        &:not(:last-child) {
+            margin-bottom: toRem(32);
+        }
+    }
+    // .content-post__faq
+    &__faq {
+    }
+}
+.faq {
+    // .faq__title
+    &__title {
+        @include adaptiveValue("font-size", 32, 26);
+        line-height: normal;
+        font-weight: 500;
+        &:not(:last-child) {
+            margin-bottom: toRem(24);
+        }
+    }
+}
+.spollers {
+    font-family: Inter;
+    // .spollers__item
+    &__item {
+    }
+    // .spollers__title
+    &__title {
+        font-size: toRem(22);
+        font-weight: 600;
+        line-height: 1.54;
+    }
+    // .spollers__body
+    &__body {
+    }
+}
+.sidebar-post {
+    &__wraperr {
+        position: sticky;
+        top: 40px;
+        display: grid;
+        @include adaptiveValue("gap", 48, 26);
+    }
+    // .sidebar-post__consultation-block
+    &__consultation-block {
+    }
+    // .sidebar-post__latest-news
+    &__latest-news {
+    }
+}
+.consultation-block {
+    padding: toRem(32) toRem(24);
+    background-color: #f5f1dc;
+    text-align: center;
+    // .consultation-block__title
+    &__title {
+        font-size: toRem(28);
+        line-height: 1;
+        text-transform: uppercase;
+        color: $colorAccent;
+        font-weight: 600;
+        &:not(:last-child) {
+            margin-bottom: toRem(8);
+        }
+    }
+    // .consultation-block__sub-title
+    &__sub-title {
+        font-size: toRem(18);
+        line-height: 1.11;
+        font-weight: 600;
+        &:not(:last-child) {
+            margin-bottom: toRem(24);
+        }
+    }
+    // .consultation-block__button
+    &__button {
+        padding: toRem(10) toRem(24);
+        min-height: toRem(44);
+        background-color: $colorAccent;
+        color: #f5f1dc;
+        transition: background-color 0.3s;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #5b4305;
+            }
+        }
+    }
+}
+
+.latest-news {
+    // .latest-news__title
+    &__title {
+        font-size: toRem(28);
+        line-height: 1;
+        text-transform: uppercase;
+        color: $colorAccent;
+        font-weight: 600;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 32, 20);
+        }
+    }
+    // .latest-news__post-block
+    &__post-block {
+    }
+}
+.post-block {
+    display: grid;
+    row-gap: toRem(16);
+    // .post-block__item
+    &__item {
+        display: flex;
+        gap: toRem(16);
+        align-items: center;
+    }
+    // .post-block__image
+    &__image {
+        height: toRem(100);
+        width: toRem(100);
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    // .post-block__info
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    // .post-block__meta
+    &__meta {
+    }
+    // .post-block__title
+    &__title {
+        font-size: toRem(18);
+        font-weight: 600;
+        line-height: 1.5;
+        @media (min-width: $mobileSmall) {
+            max-width: toRem(330);
+        }
+    }
+}
