@@ -3593,7 +3593,7 @@
                 modules: [ Navigation, Autoplay ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: Math.min(swiperSlides, 6),
+                slidesPerView: Math.min(swiperSlides, 4),
                 spaceBetween: 20,
                 speed: 800,
                 loop: swiperSlides > 1,
@@ -3608,7 +3608,7 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 10
                     },
                     500: {
@@ -3616,15 +3616,15 @@
                         spaceBetween: 20
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 20
                     },
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 20
                     },
                     1280: {
-                        slidesPerView: swiperSlides < 6 ? swiperSlides : 6,
+                        slidesPerView: swiperSlides < 4 ? swiperSlides : 4,
                         spaceBetween: 20
                     }
                 }

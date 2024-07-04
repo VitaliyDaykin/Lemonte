@@ -255,7 +255,6 @@ h6 {
   align-items: center
 }
 .partners__tab-btn-image img {
-  max-width: 9rem;
   height: 80px
 }
 .partners__info {
@@ -302,15 +301,13 @@ h6 {
 .company-team__slide-image {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 17.8125rem;
-  height: 17.8125rem
+  align-items: center
 }
 .company-team__slide-image:not(:last-child) {
   margin-bottom: 1.5rem
 }
 .company-team__slide-image img {
-  max-width: 17.8125rem;
+  max-width: 18.75rem;
   height: 17.8125rem;
   -o-object-fit: cover;
   object-fit: cover

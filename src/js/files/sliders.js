@@ -38,7 +38,7 @@ function initSliders() {
 			modules: [Navigation, Autoplay],
 			observer: true,
 			observeParents: true,
-			slidesPerView: Math.min(swiperSlides, 6), // Максимальна кількість слайдів для перегляду
+			slidesPerView: Math.min(swiperSlides, 4), // Максимальна кількість слайдів для перегляду
 			spaceBetween: 20,
 			speed: 800,
 			loop: swiperSlides > 1, // Вмикаємо loop лише якщо більше одного слайда
@@ -53,7 +53,7 @@ function initSliders() {
 			},
 			breakpoints: {
 				320: {
-					slidesPerView: 2,
+					slidesPerView: 1,
 					spaceBetween: 10,
 				},
 				500: {
@@ -61,15 +61,15 @@ function initSliders() {
 					spaceBetween: 20,
 				},
 				768: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 					spaceBetween: 20,
 				},
 				1024: {
-					slidesPerView: 4,
+					slidesPerView: 3,
 					spaceBetween: 20,
 				},
 				1280: {
-					slidesPerView: swiperSlides < 6 ? swiperSlides : 6, // Встановлюємо 6 або менше, залежно від кількості слайдів
+					slidesPerView: swiperSlides < 4 ? swiperSlides : 4, // Встановлюємо 6 або менше, залежно від кількості слайдів
 					spaceBetween: 20,
 				},
 			},

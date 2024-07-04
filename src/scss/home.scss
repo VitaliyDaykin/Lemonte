@@ -48,13 +48,17 @@
             max-width: 100%;
         }
     }
+
+    &__slide {
+    }
+
     // .partners__slide
     &__tab-btn-image {
         display: flex;
         justify-content: center;
         align-items: center;
         img {
-            max-width: toRem(144);
+            // max-width: toRem(144);
             height: 80px;
         }
     }
@@ -130,13 +134,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: toRem(285);
-        height: toRem(285);
+
         &:not(:last-child) {
             margin-bottom: toRem(24);
         }
         img {
-            max-width: toRem(285);
+            max-width: toRem(300);
             height: toRem(285);
             object-fit: cover;
         }
