@@ -60,6 +60,13 @@
         img {
             // max-width: toRem(144);
             height: 80px;
+            opacity: 0.3;
+            transition: opacity 0.3s;
+            @media (any-hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 

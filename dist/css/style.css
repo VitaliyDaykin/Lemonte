@@ -255,7 +255,9 @@ h6 {
   align-items: center
 }
 .partners__tab-btn-image img {
-  height: 80px
+  height: 80px;
+  opacity: .3;
+  transition: opacity .3s
 }
 .partners__info {
   display: flex;
@@ -730,5 +732,10 @@ h6 {
     .company-info__title:not(:last-child) {
       margin-bottom: calc(.9375rem + .5625 * (100vw - 20rem)/ 65.625)
     }
+  }
+}
+@media (any-hover:hover) {
+  .partners__tab-btn-image img:hover {
+    opacity: 1
   }
 }
